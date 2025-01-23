@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" value="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <script src="./index.js" defer></script>
+
+        <title>Etch-a-Sketch</title>
+    </head>
+    <body>
+        <dialog class="pop-up-container">
+            <div class="pop-up-content">
+                <div class="pop-header">
+                    <h1>New Grid Size</h1>
+                    <button id="closeButton" aria-label="close" formnovalidate>X</button>
+                </div>
+                <form id="createGridForm">
+                    <div class="numSquaresSection">
+                        <label for="numSquares">Number of Squares:</label><br>
+                        <input type="number" id="numSquares" name="numSquares" min="1" max="100" required><br>
+                    </div>
+                    <button id="submitButton" type="submit">Generate Grid</button>
+                </form>
+            </div>
+        </dialog>
+        <div class="etch-a-sketch-header">
+            <h1>Etch-a-Sketch</h1>
+            <div class="toolbar-buttons-container">
+                <button id="customDimensionsButton" class="toolbar-button">Custom Dimensions</button>
+                <button id="clearGridButton" class="toolbar-button">Clear Grid</button>
+            </div>
+        </div>
+        <div class="grid-container"></div>
+    </body>
+</html>
